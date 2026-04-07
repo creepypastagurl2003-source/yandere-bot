@@ -2,7 +2,7 @@ services:
   - type: web
     name: crimson-petal
     runtime: python
-    rootDir: yandere-bot
+    rootDir: yandere-bot-flat
     buildCommand: pip install -r requirements.txt
     startCommand: python main.py
     plan: free
