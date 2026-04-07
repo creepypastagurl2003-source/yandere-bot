@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: crimson-petal
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    plan: free
+    envVars:
+      - key: BOT4_TOKEN
+        sync: false
