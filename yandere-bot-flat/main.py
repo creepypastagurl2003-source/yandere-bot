@@ -97,8 +97,6 @@ def _get_ambient_channel(guild: discord.Guild) -> discord.TextChannel | None:
 
 @tasks.loop(hours=24)
 async def ambient_task():
-    if random.random() > 0.5:
-        return
     message = random.choice(AMBIENT_MESSAGES)
     for guild in bot.guilds:
         channel = _get_ambient_channel(guild)
